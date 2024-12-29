@@ -1,0 +1,23 @@
+@keyframes shake {
+    0% { transform: translate3D(0, 2px, 0); }
+    100% { transform: translate3D(0, 0, 0); }
+  }
+.m-input-wrapper {
+    display: grid;
+    gap: calc(var(--default-padding) / 4);
+}
+.m-input-wrapper--invalid .m-input{
+    animation: shake 0.5s;
+}
+.m-input-label {
+    font-size: var(--text-size-sm);
+}
+.m-input-feedback {
+    font-size: var(--text-size-xs);
+    min-height: 15px;
+    text-decoration: underline;
+}
+.m-input {
+    padding: calc(var(--default-padding) / 4);
+    overflow: hidden;
+}

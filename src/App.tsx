@@ -1,4 +1,5 @@
 import MButton from "./components/MButton"
+import { MTextInput, createValidationResult } from "./components/MTextInput"
 import MList from "./components/MList"
 import { MTable, MTableBody, MTableCell, MTableFooter, MTableHeader, MTableRow } from "./components/MTable"
 import MText from "./components/MText"
@@ -89,7 +90,21 @@ function App() {
           </MTableRow>
         </MTableFooter>
       </MTable>
-
+      <MText text="Input" tag="h2"></MText>
+      <MTextInput 
+        placeholder="only < 10 strings are valid" 
+        label="Pedro Pires" 
+        id="input-example-1"
+        validationCallback={(value) => {
+          if(value.length > 10) return createValidationResult(false, "Too long")
+          return createValidationResult(true, "")
+        }}
+        ></MTextInput>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
     </>
   )
 
