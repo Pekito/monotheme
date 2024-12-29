@@ -9,9 +9,10 @@ type MButtonProps = {
 
   function MButton(props: MButtonProps) {
     const HtmlTag = props.htmlTag ?? "div";
+    const {htmlTag, ...inheritedProps} = props;
     return (
         <HtmlTag
-            {...props}
+            {...inheritedProps}
             href={props.href}
             className={
             createClassNames(
