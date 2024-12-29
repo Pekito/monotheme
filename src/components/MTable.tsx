@@ -42,7 +42,7 @@ const MTableCell: React.FC<MTableCell> = (props) => {
       styles["m-table-cell"],
       styles[expandClass]
     )} 
-    {...props}
+    colSpan={props.colSpan}
     >
       {props.children}
     </Tag>
