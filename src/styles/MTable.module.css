@@ -1,0 +1,16 @@
+.m-table {
+    border: var(--border);
+    border-collapse: collapse;
+    width: 100%;
+}
+.m-table-header, .m-table-body {
+    border: var(--border);
+}
+.m-table-cell {
+    padding: calc(var(--default-padding) / 2);
+    border: var(--border);
+    white-space: nowrap;
+}
+.m-table-cell--expand {
+    width: 100%;
+}

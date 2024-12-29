@@ -1,0 +1,18 @@
+.m-button {
+    border: var(--border);
+    padding: var(--default-padding);
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    color: var(--text-color);
+    &:hover {
+        background: #eee;
+    }
+    &:active {
+        transform: translate3d(2px, 2px, 0);
+    }
+}
+a.m-button {
+    text-decoration: none;
+}

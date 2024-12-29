@@ -1,0 +1,10 @@
+.m-list {
+    list-style-position: inside;
+    & & {
+        padding-inline-start: var(--default-padding);
+
+    }
+    &.m-list--unordered {
+        list-style-type: square;
+    }     
+}

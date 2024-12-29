@@ -1,0 +1,36 @@
+.m-tree, .m-tree ul {
+    position: relative;
+    padding-left: 0;
+    list-style-type: none;
+    line-height: var(--text-line-height);
+  }
+  .m-tree ul {
+    margin: 0;
+  }
+  .m-tree ul li {
+    position: relative;
+    padding-left: var(--default-padding);
+    margin-left: var(--default-padding);
+    border-left: var(--border-width) solid var(--text-color);
+  }
+  .m-tree ul li:before {
+    position: absolute;
+    display: block;
+    top: calc(var(--text-line-height) / 2);
+    left: 0;
+    content: "";
+    width: 1ch;
+    border-bottom: var(--border-width) solid var(--text-color);
+  }
+  .m-tree ul li:last-child {
+    border-left: none;
+  }
+  .m-tree ul li:last-child:after {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    content: "";
+    height: calc(var(--text-line-height) / 2);
+    border-left: var(--border-width) solid var(--text-color);
+  }
